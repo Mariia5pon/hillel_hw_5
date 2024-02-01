@@ -1,10 +1,16 @@
-let n1= parseInt(prompt('Введи число 1', ' '));
-let n2= parseInt(prompt('Введи число 2', ' '));
+/*
+1. Даны два различных числа. Определить какое из них больше, а какое меньше.
+ */
 
-if (n1>n2) {
-    document.write('Number1 is bigger.');
-} else if (n1===n2){
-    document.write('The numbers are equal.');
+let n1 = parseInt(prompt('Введи число 1', ' '));
+let n2 = parseInt(prompt('Введи число 2', ' '));
+
+if (n1 > n2) {
+    document.write('Перше число більше.');
+} else if (n1 === n2) {
+    document.write('Числа дорівнюють.');
+} else if (n2 > n1) {
+    document.write('Друге число більше.');
 } else {
-    document.write('Number2 is bigger.')
+    document.write('Будь ласка, введіть коректні числа.');
 }
