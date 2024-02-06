@@ -14,6 +14,10 @@ if (number.length !== 3 || isNaN(parseInt(number))) {
     let digit3 = parseInt(number.charAt(2));
 
     let sum = digit1 + digit2 + digit3;
+//a
+    document.write(sum % 2 === 0 ? "Сума цифр є парною. " : "Сума цифр є непарною. " );
+//b
+    document.write(sum % 5 === 0 ? "Сума цифр кратна п'яти. " : "Сума цифр не кратна п'яти. ");
+//c
 
-    document.write(sum % 2 === 0 ? "Сума цифр є парною." : "Сума цифр є непарною.")
 }
