@@ -19,5 +19,6 @@ if (number.length !== 3 || isNaN(parseInt(number))) {
 //b
     document.write(sum % 5 === 0 ? "Сума цифр кратна п'яти. " : "Сума цифр не кратна п'яти. ");
 //c
-
+    let multi = digit1 * digit2 * digit3;
+    document.write(multi > 100 ? "Добуток цифр більше за 100." : "Добуток цифр більше або дорівнює 100.");
 }
