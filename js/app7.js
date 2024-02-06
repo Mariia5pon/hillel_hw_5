@@ -16,6 +16,11 @@ if (number.length !== 3 || isNaN(parseInt(number))) {
     if (areAllDigitsEqual) {
         console.log("Усі цифри однакові.");
     } else {
-        console.log("Цифри не є однаковими.");
+        let areAnyTwoDigitsEqual = digit1 === digit2 || digit2 === digit3 || digit1 === digit3;
+        if (areAnyTwoDigitsEqual) {
+            console.log("Серед цифр є однакові.");
+        } else {
+            console.log("Усі цифри різні.");
+        }
     }
 }
